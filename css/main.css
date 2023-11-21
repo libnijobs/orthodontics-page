@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --colorwhite: #dafffb;
+    --colorgreen: #7fffd4;
+    --colorazul-oscuro: #176b87;
+    --color-yelow:  #F5F5DC;
+  }
+body {
+    width: 100%;
+    min-width: 260px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    
+}
+.home-body{
+    width: 100%;
+    min-width: 260px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 140px;
+    
+}
+header .header-icons-container {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    background-color: var(--colorazul-oscuro);
+}
+header .header-icons-container .icons {
+    display: flex;
+    justify-content: end;
+    margin-right: 19px;
+    gap: 10px;
+}
+header .icons span {
+    color: white;
+}
+nav  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    background-image: linear-gradient(var(--colorwhite), var(--colorgreen));
+}
+nav .nav-logo-container {
+    margin-left: 5px;
+}
+nav .nav-logo-container img {
+    width: 190px;
+    margin-top: 16px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+}
+.home-main::before {
+    content: "";
+    background-image: url('../assets/img/Colegio-de-Odontologos-rechaza-cursos-que-ofrece-clinica-de-Aragua.jpg');
+    opacity: 0.6; /* Cambiar el valor de opacidad según sea necesario */
+    position: absolute;
+    top: 120px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Asegurarse de que el pseudo-elemento esté detrás del contenido principal */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.home-main section {
+    align-items: center;
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 68px;
+}
+.home-main-text {
+    font-family: 'Roboto mono', monospace;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: black;
+    text-shadow: 0 2px 1px var(--colorgreen);
+    text-align: center;
+}
+.home-main-button {
+    width: 110px;
+    height: 50px;
+    background-color: var(--colorgreen);
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    border-bottom: 2px solid var(--colorazul-oscuro);
+}
+.home-main-button:hover{
+    background-color: var(--colorwhite);
+}
+.blogs-main{
+    display: grid;
+}
+.blogs_container_principal{
+    background-color: #F5F5DC;
+    padding: 0 40px 40px;
+    box-shadow: 2px 2px 4px black;
+}
+.blogs-main-news{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.blogs-main-news h3{
+    grid-row: 1;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.blogs_news_img_container{
+    margin-left: 10px;
+    width: 100%;
+    grid-row: 2;
+}
+.blogs_news_img_container img{
+    width: 220px;
+}
+.blogs_news_info_container{
+    padding-top: 20px;
+    grid-row: 3;
+}
+.blogs_news_info_container p{
+    max-width: 500px;
+    margin: 20px 0 35px 0;
+}
+.blogs_posts_container{
+    padding: 0 30px 40px;
+}
+.blogs_posts_container .post_container{
+    max-width: 260px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: var(--color-yelow);
+    border: 4px solid var(--colorazul-oscuro);
+    box-shadow: 2px 2px 4px black;
+}
+.post_container p{
+    margin-bottom: 27px;
+}
+.post_container p:nth-child(2){
+    font-weight: 900;
+}
+.blogs_posts_container h3{
+    border-bottom: 1px solid #cdd2da;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.post_container_secundario{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.blogs-button{
+    border: 2px solid var(--colorazul-oscuro);
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.blogs-button:hover{
+    background-color: #8ac1d3;
+}
+.blogs_posts_container .post_container img{
+    margin-bottom: 27px;
+    border-radius: 20px;
+    width: 200px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: var(--colorazul-oscuro);
+}
+footer p{
+    height: 30px;
+    background-image: linear-gradient(var(--colorwhite), var(--colorgreen));
+}
+.blogpost_main_container{
+    padding: 0 50px 40px;
+}
+.blogpost_img_container img{
+    width: 100%;
+}.blogpost_main_container{
+    padding: 0 50px 40px;
+}
+.blogpost_main_container h3{
+    border-bottom: 2px solid rgba(163, 163, 163, 0.807);
+    padding: 20px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.blogpost_main_container article h1:nth-child(1){
+    font-size: 1.8rem;
+}
+.blogpost_main_container article p,
+.blogpost_main_container article ul{
+    margin-top: 20px;
+    text-align: justify;
+}
+.blogpost_main_container article h1{
+    margin-top: 20px;
+}
+.contact_main_container{
+    padding: 25px;
+    background-color: var(--color-yelow);
+}
+.contact_main_container .contact_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact_main_container img{
+    width: 200px;
+    height: 100px;
+}
+.contact_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.contact_right a img{
+    height: 50px;
+    width: 50px;
+}
+.profile_continer-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.profile_container-img{
+    padding: 10px;
+    width: 100%;
+}
+.profile_container-img img{
+    width: 300px;
+}
+.profile_container_info {
+    padding: 15px;
+}
+.Profile_projects_container {
+    
+}
+.profile_container-secundari{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.title_profile {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--color-yelow);
+}
+.projects_container {
+    max-width: 260px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: var(--color-yelow);
+    border: 4px solid var(--colorazul-oscuro);
+    box-shadow: 2px 2px 4px black;
+}
+.projects_container-img {
+    width: 100%;
+
+}
+.projects_container-img img{
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+}
+

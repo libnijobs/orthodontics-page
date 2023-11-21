@@ -1,0 +1,168 @@
+.home-main::before {
+    background: url('../assets/img/Colegio-de-Odontologos-rechaza-cursos-que-ofrece-clinica-de-Aragua.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid_container{
+    max-width: 980px;
+    margin: auto;
+}
+
+.blogs_container_principal{
+    background-color: #F5F5DC;
+    padding: 0 0px 40px;
+}
+.blogs-main-news {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 2fr;
+    padding-left: 60px;
+}
+.blogs-main-news h3{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.blogs_news_img_container{
+    grid-column: 1;
+    grid-row: none;
+
+}
+.blogs_news_img_container img {
+    padding-right: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+.blogs_news_info_container {
+    padding: 20px 10px 0 25px;
+    grid-column: 2;
+    grid-row: none;
+}
+.blogs-button{
+    border: 2px solid var(--colorazul-oscuro);
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.blogs-button:hover{
+    border: 2px solid #8ac1d3;
+}
+.blogs_posts_container div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.blogs_posts_container .post_container {
+    display: inline-block;
+    max-width: 36%;
+}
+.blogs_posts_container .post_container p {
+    margin-bottom: 35px
+}
+.blogpost_main_container h3{
+    border-bottom: 2px solid rgba(163, 163, 163, 0.807);
+    padding: 20px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.blogpost_main_container article h1:nth-child(1){
+    font-size: 1.8rem;
+}
+.blogpost_main_container article p,
+.blogpost_main_container article ul{
+    margin-top: 20px;
+}
+.blogpost_main_container article h1{
+    margin-top: 20px;
+}
+.blogpost_main_container article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.blogpost_info-1 {
+    grid-column: 1;
+    padding: 25px;
+}
+.blogpost_info-2 {
+    grid-column: 2;
+    padding: 25px;
+}
+.blogpost_info-3 {
+    flex-direction: column;
+    display: flex;
+    grid-column: -1/-3;
+    align-items: center;
+}
+.blogpost_info-3 ul{
+    margin-left: 80px;
+    column-gap: 90px;
+    column-count: 2;
+}
+.contact_main_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-yelow);
+    width: 100%;
+}
+.contact_main_container .contact_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+.contact_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.profile_continer-article {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+}
+.profile_container-img{
+    grid-column: 1;
+    grid-row: none;
+    width: 100%;
+
+}
+.profile_container-img img{
+    min-width: 300px;
+    width: 70%;
+}
+.profile_container_info {
+    grid-column: 2;
+    grid-row: none;
+    margin-top: 110px;
+    padding: 30px 30px 0 25px;
+    height: 210px;
+    background-color: beige;
+}
+.Profile_projects_container {
+    display: grid;
+    grid-template-rows: 100px 2fr;
+    place-items: center;
+    margin-bottom: 50px;
+}
+.profile_container-secundari{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.title_profile {
+    grid-column: 1/-1;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem;
+}
+.projects_container {
+    display: inline-block;
+    max-width: 36%;
+}
+
